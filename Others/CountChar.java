@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+import java.util.Objects;
+
 
 /**
  * @author Kyler Smith, 2017
@@ -28,8 +30,7 @@ public class CountChar {
 
     	int count = 0;
 
-    	if(str == "" || str == null) //Exceptions
-		{ 
+    	if (Objects.equals(str, "") || Objects.equals(str, null)) { 
 			return 0; 
 		}
 
